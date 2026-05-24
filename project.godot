@@ -13,7 +13,13 @@ config_version=5
 config/name="Sentenced"
 run/main_scene="uid://dsuvva1t0pb25"
 config/features=PackedStringArray("4.6", "Mobile")
-config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [physics]
 
