@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://r4sm4k8nvc8c"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xsrko"]
+load_path = "res://.godot/imported/damask-seamless-pattern-element-vector-floral-damask-ornament-vintage-illustration_1217-5787.jpg-72dc03fb9d649e36c919b3f95169f95d.ctex"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_topoe"]
 bg_color = Color(0.2901961, 0.17254902, 0.06666667, 1)
 
@@ -31,8 +34,13 @@ layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="VBoxContainer/Panel" unique_id=1109299106]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -67.0
+offset_top = -4.0
+offset_right = 1334.0
+offset_bottom = 204.0
+texture = SubResource("CompressedTexture2D_xsrko")
+expand_mode = 1
+stretch_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=560585125]
 custom_minimum_size = Vector2(8, 8)
