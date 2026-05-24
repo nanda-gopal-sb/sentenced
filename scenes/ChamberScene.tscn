@@ -9,9 +9,6 @@ bg_color = Color(0.6892694, 0.5969356, 0.19962138, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_556kj"]
 bg_color = Color(1, 0.60784316, 0.2627451, 0.6745098)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b3u6c"]
-bg_color = Color(0.2901961, 0.5176471, 0.5882353, 1)
-
 [node name="Control" type="Control" unique_id=1025668268]
 layout_mode = 3
 anchors_preset = 15
@@ -51,8 +48,3 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_xsrko")
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_556kj")
-
-[node name="Bottom" type="Panel" parent="VBoxContainer" unique_id=986045545]
-custom_minimum_size = Vector2(0, 40)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_b3u6c")
