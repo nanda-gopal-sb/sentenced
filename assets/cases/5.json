@@ -1,0 +1,38 @@
+[
+  {
+    "case_id": 10501,
+    "defendant_name": "Elias Vance",
+    "defendant_age": 42,
+    "defendant_profession": "Hydroponic Technician",
+    "defendant_homeState": "Veridia",
+    "charge": "P5-05: Environmental Crime (Unsanctioned Cultivation)",
+    "priority_level": 5,
+    "evidence_quality": "High",
+    "summary": "Subject apprehended by civic wardens inside Veridia Sector 4 for growing non-standard heirloom tomato variants in a decommissioned drainage pipe. The seeds used were not registered with the Ministry of Agricultural Purity. Subject claims he was merely attempting to supplement his family's synthetic protein rations.",
+    "location": "Veridia Sector 4 Hydro-Block B",
+    "date_of_crime": "140526",
+    "date_of_arrest": "140526",
+    "date_of_trial": "180526",
+    "verdict": "",
+    "sentence": "",
+    "is_guilty": true
+  },
+  {
+    "case_id": 10502,
+    "defendant_name": "Kira Cross",
+    "defendant_age": 19,
+    "defendant_profession": "Data Sorter",
+    "defendant_homeState": "Astraea",
+    "charge": "P5-06: Property Damage (Subversive Defacement)",
+    "priority_level": 5,
+    "evidence_quality": "Medium",
+    "summary": "Subject caught on low-resolution security surveillance altering a public propaganda billboard in Astraea. The digital display originally read 'The Consensus Breeds Stability.' Using a magnetic logic-splicer, the text was manipulated to read 'The Consensus Breeds Silence.' Subject claims she was fixing a terminal malfunction.",
+    "location": "Astraea Transit Terminal Hub 3",
+    "date_of_crime": "220526",
+    "date_of_arrest": "230526",
+    "date_of_trial": "250526",
+    "verdict": "",
+    "sentence": "",
+    "is_guilty": true
+  }
+]

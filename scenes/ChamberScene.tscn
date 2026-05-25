@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://r4sm4k8nvc8c"]
 
+[ext_resource type="Script" uid="uid://bbr2xmgj75qnl" path="res://scripts/game/ChamberScene.gd" id="1_topoe"]
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xsrko"]
 load_path = "res://.godot/imported/damask-seamless-pattern-element-vector-floral-damask-ornament-vintage-illustration_1217-5787.jpg-72dc03fb9d649e36c919b3f95169f95d.ctex"
 
@@ -19,6 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_topoe")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=826470911]
 layout_mode = 1
