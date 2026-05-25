@@ -31,11 +31,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="VBoxContainer" unique_id=1594320418]
+[node name="ChambersRoom" type="Panel" parent="VBoxContainer" unique_id=1594320418]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="VBoxContainer/Panel" unique_id=1109299106]
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer/ChambersRoom" unique_id=1109299106]
 layout_mode = 0
 offset_left = -67.0
 offset_top = -4.0
@@ -53,18 +53,18 @@ size_flags_vertical = 3
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer" unique_id=1429661865]
 layout_mode = 2
 
-[node name="Left" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=171880454]
+[node name="NewCases" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=171880454]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_topoe")
 
-[node name="Center" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=899674305]
+[node name="Workspace" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=899674305]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 2.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_xsrko")
 
-[node name="Right" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1882141888]
+[node name="Letters" type="Panel" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1882141888]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_556kj")

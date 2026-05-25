@@ -10,6 +10,6 @@ func _ready() -> void:
 func load_new_case_by_priority(priority: int) -> void:
     current_case = Case.getCase(priority)    
     if current_case != null:
-        print("Successfully loaded case ID: ", current_case.defendant_name)
+        print("Successfully loaded case ID: ", current_case.defendant_name) 
     else:
         print("Failed to populate case file.")
