@@ -1,9 +1,8 @@
 [gd_scene format=3 uid="uid://r4sm4k8nvc8c"]
 
 [ext_resource type="Script" uid="uid://bbr2xmgj75qnl" path="res://scripts/game/ChamberScene.gd" id="1_topoe"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xsrko"]
-load_path = "res://.godot/imported/damask-seamless-pattern-element-vector-floral-damask-ornament-vintage-illustration_1217-5787.jpg-72dc03fb9d649e36c919b3f95169f95d.ctex"
+[ext_resource type="Texture2D" uid="uid://gr6aoncx7hav" path="res://assets/sprites/chamber_scene.png" id="2_556kj"]
+[ext_resource type="Texture2D" uid="uid://dmsenbqhd8yye" path="res://assets/sprites/desk.png" id="3_b3u6c"]
 
 [node name="Control" type="Control" unique_id=1025668268]
 layout_mode = 3
@@ -20,7 +19,7 @@ anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 144.0
 grow_horizontal = 2
-texture = SubResource("CompressedTexture2D_xsrko")
+texture = ExtResource("2_556kj")
 expand_mode = 1
 stretch_mode = 1
 
@@ -29,6 +28,15 @@ anchors_preset = 0
 offset_top = 144.0
 offset_right = 640.0
 offset_bottom = 360.0
+
+[node name="TextureRect" type="TextureRect" parent="DeskSurface" unique_id=1254466174]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_b3u6c")
 
 [node name="LayoutGuild" type="Control" parent="DeskSurface" unique_id=54544148]
 layout_mode = 1
