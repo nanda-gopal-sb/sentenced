@@ -20,8 +20,6 @@ anchor_right = 1.0
 offset_bottom = 144.0
 grow_horizontal = 2
 texture = ExtResource("2_556kj")
-expand_mode = 1
-stretch_mode = 1
 
 [node name="DeskSurface" type="Control" parent="." unique_id=959685859]
 anchors_preset = 0
@@ -49,19 +47,19 @@ grow_vertical = 2
 [node name="LeftZone" type="ReferenceRect" parent="DeskSurface/LayoutGuild" unique_id=1108440289]
 layout_mode = 0
 offset_right = 160.0
-offset_bottom = 216.0
+offset_bottom = 227.0
 border_color = Color(0.61796683, 0.52396303, 0.29806545, 1)
 
 [node name="MiddleZone" type="ReferenceRect" parent="DeskSurface/LayoutGuild" unique_id=472956945]
 layout_mode = 0
 offset_left = 160.0
 offset_right = 480.0
-offset_bottom = 216.0
+offset_bottom = 228.0
 border_color = Color(0.25957474, 0.55736077, 0.80812305, 1)
 
 [node name="RightZone" type="ReferenceRect" parent="DeskSurface/LayoutGuild" unique_id=1262428556]
 layout_mode = 0
 offset_left = 480.0
 offset_right = 640.0
-offset_bottom = 216.0
+offset_bottom = 228.0
 border_color = Color(0.4256837, 0.60103345, 0.060684457, 1)
