@@ -54,8 +54,8 @@ border_color = Color(0.61796683, 0.52396303, 0.29806545, 1)
 
 [node name="MiddleZone" type="ReferenceRect" parent="DeskSurface/LayoutGuild" unique_id=472956945]
 layout_mode = 0
-offset_left = 160.0
-offset_right = 480.0
+offset_left = 159.0
+offset_right = 479.0
 offset_bottom = 228.0
 border_color = Color(0.25957474, 0.55736077, 0.80812305, 1)
 

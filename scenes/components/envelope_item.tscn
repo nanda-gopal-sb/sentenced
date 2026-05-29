@@ -7,8 +7,8 @@
 [node name="EnvelopeItem" type="Control" unique_id=256315803]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 87.0
-offset_bottom = 110.0
+offset_right = 76.0
+offset_bottom = 50.0
 script = ExtResource("1_wkdig")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1368708153]
