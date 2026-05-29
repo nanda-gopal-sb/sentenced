@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b4uaiydi6e78d"]
+
+[ext_resource type="Texture2D" uid="uid://ryuna44lqaev" path="res://assets/sprites/folder_closed.png" id="1_3n1wy"]
+[ext_resource type="Script" uid="uid://c37mj3ya8slw6" path="res://scripts/game/cases_dragging.gd" id="1_7d02j"]
+
+[node name="Control" type="Control" unique_id=453688964]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 57.0
+offset_bottom = 81.0
+script = ExtResource("1_7d02j")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=226340627]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_3n1wy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1919158173]
+layout_mode = 0
+offset_right = 55.0
+offset_bottom = 80.0
+mouse_filter = 2
