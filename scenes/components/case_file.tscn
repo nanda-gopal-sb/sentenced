@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://ryuna44lqaev" path="res://assets/sprites/folder_closed.png" id="1_3n1wy"]
 [ext_resource type="Script" uid="uid://c37mj3ya8slw6" path="res://scripts/game/cases_dragging.gd" id="1_7d02j"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="3_ho0yh"]
+[ext_resource type="Texture2D" uid="uid://b37vvw5bba0n2" path="res://assets/sprites/turn_button.png" id="4_2cn7k"]
 
 [node name="Control" type="Control" unique_id=453688964]
 layout_mode = 3
@@ -17,8 +19,53 @@ offset_bottom = 40.0
 mouse_filter = 2
 texture = ExtResource("1_3n1wy")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1919158173]
+[node name="CaseFile" type="RichTextLabel" parent="." unique_id=421754479]
 layout_mode = 0
-offset_right = 55.0
-offset_bottom = 80.0
+offset_left = 8.0
+offset_top = 32.0
+offset_right = 53.0
+offset_bottom = 43.0
 mouse_filter = 2
+theme_override_colors/default_color = Color(0.1764706, 0.12156863, 0.12941177, 1)
+theme_override_fonts/normal_font = ExtResource("3_ho0yh")
+theme_override_font_sizes/normal_font_size = 13
+text = "Case File"
+
+[node name="RightText" type="RichTextLabel" parent="." unique_id=1919158173]
+layout_mode = 0
+offset_left = 69.0
+offset_top = 3.0
+offset_right = 125.0
+offset_bottom = 98.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_ho0yh")
+theme_override_font_sizes/normal_font_size = 10
+
+[node name="LeftText" type="RichTextLabel" parent="." unique_id=266694619]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 3.0
+offset_right = 64.0
+offset_bottom = 98.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_ho0yh")
+theme_override_font_sizes/normal_font_size = 10
+
+[node name="RghtTurnButton" type="TextureButton" parent="." unique_id=223509119]
+layout_mode = 0
+offset_left = 110.0
+offset_top = 83.0
+offset_right = 125.0
+offset_bottom = 98.0
+texture_normal = ExtResource("4_2cn7k")
+
+[node name="LeftTurnButton" type="TextureButton" parent="." unique_id=1705311912]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 83.0
+offset_right = 19.0
+offset_bottom = 98.0
+rotation = 6.2831855
+texture_normal = ExtResource("4_2cn7k")

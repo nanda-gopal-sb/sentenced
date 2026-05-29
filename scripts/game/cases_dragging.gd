@@ -4,10 +4,24 @@ const TEXTURE_CLOSED = preload("res://assets/sprites/folder_closed.png")
 const TEXTURE_OPENED = preload("res://assets/sprites/folder_opened.png" )
 
 @onready var texture_rect: TextureRect = $TextureRect
-#@onready var document_text: RichTextLabel = $DocumentText
+@onready var case_label: RichTextLabel = $CaseFile
+
+@onready var left_page_label: RichTextLabel = $LeftText
+@onready var right_page_label: RichTextLabel = $RightText
+@onready var page_turn_btn: TextureButton = $RghtTurnButton
+@onready var page_back_btn: TextureButton = $LeftTurnButton
+
+# Data structure holding individual page strings. 
+# Each entry in the array represents ONE single page face.
+var folder_pages: Array[String] = [
+	"PAGE 1:\nINCIDENT DOSSIER\n\nSubject entered Kochi checkpoint without a valid entry permit.",
+	"PAGE 2:\nBIOMETRICS\n\nEye Color: Brown\nHeight: 178 cm\nDistinguishing Marks: None.",
+	"PAGE 3:\nPREVIOUS VIOLATIONS\n\n- 2024: Unauthorized entry attempt\n- 2025: Contraband smuggling.",
+	"PAGE 4:\nFINAL VERDICT\n\nClearance denied.\nDetain subject if entry is forced."
+]
 const BASELINE_WIDTH: float = 80.0
 const BASELINE_HEIGHT: float = 50.0
-
+var current_spread_index: int = 0 # 0 means pages (1 and 2), 1 means pages (3 and 4), etc.
 var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
@@ -16,11 +30,15 @@ var drag_offset: Vector2 = Vector2.ZERO
 var letter_content: String = "You Murdered My Family"
 
 func _ready() -> void:
+	page_turn_btn.pressed.connect(_on_page_turn_pressed)
+	update_ledger_display()
 	gui_input.connect(_on_gui_input)
-	print("helo")
 	# Keep text hidden by default while it sits inside the closed envelope pile
-	#document_text.visible = false
-	#document_text.text = letter_content
+	left_page_label.visible = false
+	right_page_label.visible = false
+	page_turn_btn.visible = false
+	page_back_btn.visible = false
+	case_label.visible = true
 	
 	var desk_surface = get_parent()
 	if desk_surface:
@@ -62,11 +80,52 @@ func check_zone_collision() -> void:
 			rotation_degrees = 0.0  # Straighten the letter when it unfolds on the mat
 			texture_rect.texture = TEXTURE_OPENED
 			# Show the text layer when unfolded on the mat
-			#document_text.visible = true
+			left_page_label.visible = true
+			right_page_label.visible = true
+			case_label.visible = false
+			page_turn_btn.visible = true
+			page_back_btn.visible = true
 	else:
 		if texture_rect.texture != TEXTURE_CLOSED:
 			size = Vector2(76, 50)  # Shrink the letter back down when thrown off the mat
 			rotation_degrees = randf_range(-12.0, 12.0)  # Reapply a random tilt when thrown back into the envelope pile
 			texture_rect.texture = TEXTURE_CLOSED
 			# Hide the text completely when thrown off the mat back into an envelope
-			#document_text.visible = false
+			left_page_label.visible = false
+			right_page_label.visible = false
+			case_label.visible = true
+			page_turn_btn.visible = false
+			page_back_btn.visible = false
+
+func update_ledger_display() -> void:
+	# Calculate which array indices correspond to our current left and right view
+	var left_page_idx = current_spread_index * 2
+	var right_page_idx = left_page_idx + 1
+	
+	# 1. Update Left Page Text
+	if left_page_idx < folder_pages.size():
+		left_page_label.text = folder_pages[left_page_idx]
+		left_page_label.visible = true
+	else:
+		left_page_label.text = ""
+		
+	# 2. Update Right Page Text
+	if right_page_idx < folder_pages.size():
+		right_page_label.text = folder_pages[right_page_idx]
+		right_page_label.visible = true
+	else:
+		right_page_label.text = ""
+
+	# 3. Handle the Corner Visibility Rule!
+	# Determine if there are more pages left to see further in the array
+	var next_spread_has_pages = (current_spread_index + 1) * 2 < folder_pages.size()
+	
+	if next_spread_has_pages:
+		page_turn_btn.visible = true  # Keep the dog-ear visible if more pages remain
+	else:
+		page_turn_btn.visible = false # Hide it completely on the final page spread!
+
+func _on_page_turn_pressed() -> void:
+	# Advance to the next two-page spread and update visuals
+	current_spread_index += 1
+	update_ledger_display()
