@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bs5ray3240okx"]
+
+[ext_resource type="Texture2D" uid="uid://cj5auv5s58cu1" path="res://assets/sprites/letter.png" id="1_t85b8"]
+[ext_resource type="Script" uid="uid://hl5ka7mvls81" path="res://scripts/game/envelop_dragging.gd" id="1_wkdig"]
+
+[node name="EnvelopeItem" type="Control" unique_id=256315803]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 76.0
+offset_bottom = 49.0
+script = ExtResource("1_wkdig")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1368708153]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_t85b8")

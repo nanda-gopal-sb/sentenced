@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bbr2xmgj75qnl" path="res://scripts/game/ChamberScene.gd" id="1_topoe"]
 [ext_resource type="Texture2D" uid="uid://gr6aoncx7hav" path="res://assets/sprites/chamber_scene.png" id="2_556kj"]
+[ext_resource type="Script" uid="uid://bln3bialsyj20" path="res://scripts/game/Desk.gd" id="3_5k8bo"]
 [ext_resource type="Texture2D" uid="uid://dmsenbqhd8yye" path="res://assets/sprites/desk.png" id="3_b3u6c"]
 
 [node name="Control" type="Control" unique_id=1025668268]
@@ -26,6 +27,7 @@ anchors_preset = 0
 offset_top = 144.0
 offset_right = 640.0
 offset_bottom = 360.0
+script = ExtResource("3_5k8bo")
 
 [node name="TextureRect" type="TextureRect" parent="DeskSurface" unique_id=1254466174]
 layout_mode = 1
