@@ -31,6 +31,7 @@ var letter_content: String = "You Murdered My Family"
 
 func _ready() -> void:
 	page_turn_btn.pressed.connect(_on_page_turn_pressed)
+	page_back_btn.pressed.connect(_on_page_back_pressed)
 	update_ledger_display()
 	gui_input.connect(_on_gui_input)
 	# Keep text hidden by default while it sits inside the closed envelope pile
@@ -84,7 +85,6 @@ func check_zone_collision() -> void:
 			right_page_label.visible = true
 			case_label.visible = false
 			page_turn_btn.visible = true
-			page_back_btn.visible = true
 	else:
 		if texture_rect.texture != TEXTURE_CLOSED:
 			size = Vector2(76, 50)  # Shrink the letter back down when thrown off the mat
@@ -124,8 +124,18 @@ func update_ledger_display() -> void:
 		page_turn_btn.visible = true  # Keep the dog-ear visible if more pages remain
 	else:
 		page_turn_btn.visible = false # Hide it completely on the final page spread!
+	
+	# Determine if there are previous pages to see
+	var previous_spread_has_pages = current_spread_index > 0
+	if previous_spread_has_pages:
+		page_back_btn.visible = true  # Keep the dog-ear visible if previous pages exist
+	else:
+		page_back_btn.visible = false # Hide it completely on the first page spread!
 
 func _on_page_turn_pressed() -> void:
-	# Advance to the next two-page spread and update visuals
 	current_spread_index += 1
+	update_ledger_display()
+
+func _on_page_back_pressed() -> void:
+	current_spread_index -= 1
 	update_ledger_display()
