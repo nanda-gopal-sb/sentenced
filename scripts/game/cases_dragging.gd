@@ -10,7 +10,7 @@ const TEXTURE_OPENED = preload("res://assets/sprites/folder_opened.png" )
 @onready var right_page_label: RichTextLabel = $RightText
 @onready var page_turn_btn: TextureButton = $RghtTurnButton
 @onready var page_back_btn: TextureButton = $LeftTurnButton
-
+@onready var choice_overlay: VBoxContainer = $ChoiceOverlay
 # Data structure holding individual page strings. 
 # Each entry in the array represents ONE single page face.
 var folder_pages: Array[String] = [

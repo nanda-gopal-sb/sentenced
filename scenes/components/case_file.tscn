@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b4uaiydi6e78d"]
 
-[ext_resource type="Texture2D" uid="uid://ryuna44lqaev" path="res://assets/sprites/folder_closed.png" id="1_3n1wy"]
 [ext_resource type="Script" uid="uid://c37mj3ya8slw6" path="res://scripts/game/cases_dragging.gd" id="1_7d02j"]
+[ext_resource type="Texture2D" uid="uid://d0etive5qxiuo" path="res://assets/sprites/folder_opened.png" id="2_2cn7k"]
 [ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="3_ho0yh"]
 [ext_resource type="Texture2D" uid="uid://b37vvw5bba0n2" path="res://assets/sprites/turn_button.png" id="4_2cn7k"]
 
@@ -17,9 +17,10 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 mouse_filter = 2
-texture = ExtResource("1_3n1wy")
+texture = ExtResource("2_2cn7k")
 
 [node name="CaseFile" type="RichTextLabel" parent="." unique_id=421754479]
+visible = false
 layout_mode = 0
 offset_left = 8.0
 offset_top = 32.0
@@ -69,3 +70,25 @@ offset_right = 19.0
 offset_bottom = 98.0
 rotation = 6.2831855
 texture_normal = ExtResource("4_2cn7k")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1989867299]
+
+[node name="ChoiceOverlay" type="VBoxContainer" parent="." unique_id=1642187027]
+visible = false
+layout_mode = 0
+offset_left = 72.0
+offset_top = 48.0
+offset_right = 122.0
+offset_bottom = 82.0
+
+[node name="DeathPenalty" type="Button" parent="ChoiceOverlay" unique_id=1758991700]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ho0yh")
+theme_override_font_sizes/font_size = 9
+text = "Death Penalty"
+
+[node name="CourtSummon" type="Button" parent="ChoiceOverlay" unique_id=1749761198]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_ho0yh")
+theme_override_font_sizes/font_size = 9
+text = "Summon Court"
