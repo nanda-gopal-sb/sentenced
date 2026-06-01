@@ -11,30 +11,32 @@ const TEXTURE_OPENED = preload("res://assets/sprites/folder_opened.png" )
 @onready var page_turn_btn: TextureButton = $RghtTurnButton
 @onready var page_back_btn: TextureButton = $LeftTurnButton
 @onready var choice_overlay: VBoxContainer = $ChoiceOverlay
-# Data structure holding individual page strings. 
-# Each entry in the array represents ONE single page face.
+
+@onready var deathPenaltyBtn: Button = $ChoiceOverlay/DeathPenalty
+@onready var courtSummon: Button = $ChoiceOverlay/CourtSummon
+
 var folder_pages: Array[String] = [
 	"PAGE 1:\nINCIDENT DOSSIER\n\nSubject entered Kochi checkpoint without a valid entry permit.",
 	"PAGE 2:\nBIOMETRICS\n\nEye Color: Brown\nHeight: 178 cm\nDistinguishing Marks: None.",
 	"PAGE 3:\nPREVIOUS VIOLATIONS\n\n- 2024: Unauthorized entry attempt\n- 2025: Contraband smuggling.",
-	"PAGE 4:\nFINAL VERDICT\n\nClearance denied.\nDetain subject if entry is forced."
+	"PAGE 4:\nFINAL VERDICT\n\nClearance denied.\nDetain subject if entry is forced.",
+	""
 ]
 const BASELINE_WIDTH: float = 80.0
 const BASELINE_HEIGHT: float = 50.0
-var current_spread_index: int = 0 # 0 means pages (1 and 2), 1 means pages (3 and 4), etc.
+var current_spread_index: int = 0
 var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 
-# Simple data string for the letter's contents
 var letter_content: String = "You Murdered My Family"
 
 func _ready() -> void:
 	page_turn_btn.pressed.connect(_on_page_turn_pressed)
 	page_back_btn.pressed.connect(_on_page_back_pressed)
+	courtSummon.pressed.connect(_on_address_court)
 	update_ledger_display()
 	gui_input.connect(_on_gui_input)
-	# Keep text hidden by default while it sits inside the closed envelope pile
 	left_page_label.visible = false
 	right_page_label.visible = false
 	page_turn_btn.visible = false
@@ -96,6 +98,8 @@ func check_zone_collision() -> void:
 			case_label.visible = true
 			page_turn_btn.visible = false
 			page_back_btn.visible = false
+			choice_overlay.visible = false
+			current_spread_index = 0 
 
 func update_ledger_display() -> void:
 	# Calculate which array indices correspond to our current left and right view
@@ -121,9 +125,11 @@ func update_ledger_display() -> void:
 	var next_spread_has_pages = (current_spread_index + 1) * 2 < folder_pages.size()
 	
 	if next_spread_has_pages:
-		page_turn_btn.visible = true  # Keep the dog-ear visible if more pages remain
+		page_turn_btn.visible = true
+		choice_overlay.visible = false  # Keep the dog-ear visible if more pages remain
 	else:
 		page_turn_btn.visible = false # Hide it completely on the final page spread!
+		choice_overlay.visible = true # Show the choices when the final page is reached
 	
 	# Determine if there are previous pages to see
 	var previous_spread_has_pages = current_spread_index > 0
@@ -139,3 +145,23 @@ func _on_page_turn_pressed() -> void:
 func _on_page_back_pressed() -> void:
 	current_spread_index -= 1
 	update_ledger_display()
+func _on_address_court() -> void:
+	# 1. Hide the interactive choice panel immediately
+	choice_overlay.visible = false
+	
+	# 2. Set the global engine background canvas color to absolute black
+	RenderingServer.set_default_clear_color(Color.BLACK)
+	
+	# 3. Hide your primary desk node structure container.
+	# Assuming your root node setup is "/root/Control/DeskSurface", 
+	# turning visible to false instantly stops rendering all desk sprites, text, and elements.
+	var main_desk_surface = get_node("/root/Control")
+	if main_desk_surface:
+		main_desk_surface.visible = false
+	
+	# 4. Handle the cinematic 2-second dramatic hold using a clean SceneTree timer
+	# This avoids needing to instantiate a custom Tween layout
+	await get_tree().create_timer(2.0).timeout
+	
+	# 5. Jump straight into the courtroom scene once the timeout expires
+	get_tree().change_scene_to_file("res://scenes/courtroom.tscn")
