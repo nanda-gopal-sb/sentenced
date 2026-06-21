@@ -16,7 +16,7 @@ const TEXTURE_OPENED = preload("res://assets/sprites/folder_opened.png" )
 @onready var courtSummon: Button = $ChoiceOverlay/CourtSummon
 
 var folder_pages: Array[String] = [
-	"PAGE 1:\nINCIDENT DOSSIER\n\nSubject entered Kochi checkpoint without a valid entry permit.",
+	"PAGE 1:\nINCIDENT DOSSIER\n\nSubject entered checkpoint without a valid entry permit.",
 	"PAGE 2:\nBIOMETRICS\n\nEye Color: Brown\nHeight: 178 cm\nDistinguishing Marks: None.",
 	"PAGE 3:\nPREVIOUS VIOLATIONS\n\n- 2024: Unauthorized entry attempt\n- 2025: Contraband smuggling.",
 	"PAGE 4:\nFINAL VERDICT\n\nClearance denied.\nDetain subject if entry is forced.",
@@ -29,7 +29,7 @@ var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 
-var letter_content: String = "You Murdered My Family"
+var letter_content: String = "Dear Judge \n Thanks for helping me what case, evidence was really flimsy. \n I will make sure you get a promotion \n Sincerely, \n Procecutor"
 
 func _ready() -> void:
 	page_turn_btn.pressed.connect(_on_page_turn_pressed)

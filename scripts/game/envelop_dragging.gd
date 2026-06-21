@@ -13,7 +13,7 @@ var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 
 # Simple data string for the letter's contents
-var letter_content: String = "You Murdered My Family"
+var letter_content: String = "Dear Judge \n Thanks for helping me what case, evidence was really flimsy. \n I will make sure you get a promotion \n Sincerely, \n Procecutor"
 
 func _ready() -> void:
 	gui_input.connect(_on_gui_input)
