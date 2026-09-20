@@ -1,3 +1,9 @@
 [gd_scene format=3 uid="uid://dsuvva1t0pb25"]
 
+[ext_resource type="Texture2D" uid="uid://gr6aoncx7hav" path="res://assets/sprites/chamber_scene.png" id="1_ibkli"]
+
 [node name="Game" type="Node2D" unique_id=850504604]
+
+[node name="ChamberScene" type="Sprite2D" parent="." unique_id=358024034]
+position = Vector2(290, 253)
+texture = ExtResource("1_ibkli")
