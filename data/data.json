@@ -1,0 +1,725 @@
+[
+  {
+	"id": "case_p5_001",
+	"priority": "P5",
+	"crime_category": "Petty Theft",
+	"score_earned": 100,
+	"actual_verdict": "Reduced Sentence",
+	"govt_importance_score": 10,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Marcus Vance\nCharge: Theft of 3 loaves of government-rationed bread from Distribution Hub 4.",
+	  "PAGE 2:\nEVIDENCE & BIOMETRICS\n\nSubject admitted to taking food without ration tokens.\nReason cited: Feeding malnutritioned dependent child.",
+	  "PAGE 3:\nPREVIOUS VIOLATIONS\n\n- None. First-time offender with a clean labor record at Sector 7 Mill.",
+	  "PAGE 4:\nRECOMMENDED ACTION\n\nState demands strict labor sentence to deter ration theft.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Your Honor, ration theft directly undermines Meridia's resource management! A harsh labor sentence is required."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Objection! Marcus took bread only because his child's rations were delayed for two weeks due to administrative errors!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Administrative delays do not grant citizens the right to plunder state reserves at will."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He took only three loaves to prevent starvation, and immediately turned himself in the following morning!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nThe Ministry acknowledges your sentence. Resource discipline is absolute. Keep this compliance in mind for future cases—we are always monitoring.\n\nFrom: The Ministry of Supplies & Order",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA compromise, then? How thoroughly uninspiring. While labor camps build character, we suppose a reduced sentence keeps a bench clerk from crying. Do try to show a backbone next time.\n\nFrom: The Ministry of Supplies & Order",
+	"govt_negative_letter": "Judge,\n\nYour unearned leniency regarding State property sets an unacceptable precedent. Weakness at your bench infects the populace. Do not misplace your priorities again.\n\nFrom: The Ministry of Internal Compliance",
+	"family_positive_letter": "To the Honorable Judge,\n\nBless you... bless you from the bottom of my weeping heart. You saved my poor father from dying in the freezing labor camps. My little brother can eat today because of your mercy.\n\nFrom: The Vance Family",
+	"family_negative_letter": "To the Judge who condemned us,\n\nHe only wanted to save my little brother from starving to death! You tore our father away for three loaves of bread. You have condemned our entire home to slow, agonizing starvation.\n\nFrom: The Vance Family"
+  },
+  {
+	"id": "case_p5_002",
+	"priority": "P5",
+	"crime_category": "Arson",
+	"score_earned": 120,
+	"actual_verdict": "Death Sentence",
+	"govt_importance_score": 15,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Kenneth Reade\nCharge: Intentional arson of Residential Sector 12 grain depot.",
+	  "PAGE 2:\nINVESTIGATION FINDINGS\n\nAccelerant traces found matched industrial fuel owned by subject.\n4 maintenance workers suffered severe burns.",
+	  "PAGE 3:\nPREVIOUS VIOLATIONS\n\n- 2024: Public Nuisance\n- 2025: Suspended for workplace destruction.",
+	  "PAGE 4:\nFINAL VERDICT\n\nClear malice proven. Maximum penalty requested.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The defendant willfully set fire to a critical grain depot, endangering dozens of lives and destroying rations!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "It was an industrial accident during off-hours maintenance, Your Honor! My client was attempting to fix a fuel leak!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Forensics found three separate ignition points across the building. That is no accidental ignition."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The wiring in Sector 12 is decades old and faulty! The sparks spread through the ventilation ducts uncontrollably!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nA swift eradication of an arsonist keeps our infrastructure safe and sends the proper message to potential saboteurs. A clean, efficient verdict.\n\nFrom: The Ministry of Infrastructure Security",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for a man who burned a grain depot? How delightfully lukewarm. We assume you expect him to sweep the ashes with a toothbrush. We shall note your preference for mild inconveniences over actual deterrence.\n\nFrom: The Ministry of Infrastructure Security",
+	"govt_negative_letter": "Judge,\n\nWhy spare a human plague who incinerated State stores and burned citizens? Your soft heart makes us question your suitability for high judicial service.\n\nFrom: The Ministry of Internal Compliance",
+	"family_positive_letter": "To the Honorable Judge,\n\nWe weep for Kenneth's soul, but we thank you for ensuring a swift end without torture. We accept the court's judgment with heavy, broken hearts.\n\nFrom: The Reade Family",
+	"family_negative_letter": "To the Cold-Blooded Judge,\n\nYou murdered him! You sentenced Kenneth to the firing squad over faulty electrical wiring that the State refused to fix for five years! His blood is forever dripping from your gavel.\n\nFrom: The Reade Family"
+  },
+  {
+	"id": "case_p5_003",
+	"priority": "P5",
+	"crime_category": "Environmental Crime",
+	"score_earned": 110,
+	"actual_verdict": "Not Guilty",
+	"govt_importance_score": 20,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Dr. Elena Rostova\nCharge: Illegal dumping of chemical waste into District Water Reservoir.",
+	  "PAGE 2:\nEVIDENCE SUMMARY\n\nWaste barrels tagged with Rostova's lab serial numbers found near riverbank.\nDr. Rostova claims serial tags were stolen prior to disposal date.",
+	  "PAGE 3:\nSECURITY LOGS\n\nFacility security cameras show break-in 24 hours prior to dumping incident.",
+	  "PAGE 4:\nSTATE POSITION\n\nMinistry demands immediate conviction to calm public outrage.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Citizens are drinking contaminated water! Dr. Rostova's registered chemical barrels were found right on the riverbank!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Facility security logs prove her lab was burglarized 24 hours prior! The serial tags were cloned to frame her!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The public demands immediate accountability. Her negligence in securing those barrels makes her responsible regardless!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Punishing a scientist for a crime committed by intruders will not clean the water or catch the real perpetrators!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nConvicting her placated the hysterical mobs in Sector 4 quickly. Truth is secondary to public tranquility. You served the Ministry's narrative well today.\n\nFrom: The Ministry of Public Propaganda",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence? So she isn't fully guilty, but not quite innocent enough to walk? How remarkably indecisive. The public remains confused, but at least your conscience gets a tiny gold star.\n\nFrom: The Ministry of Public Propaganda",
+	"govt_negative_letter": "Judge,\n\nBy letting her walk free, you have left the public screaming at OUR gates for blood! Next time you are asked to provide a scapegoat, you will obey.\n\nFrom: The Ministry of Public Propaganda",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you... thank you for actually looking at those security logs! You saved an innocent scientist from being thrown to the wolves just to protect the state's image.\n\nFrom: Dr. Rostova's Loved Ones",
+	"family_negative_letter": "To the Judge who destroyed an innocent life,\n\nYou threw a brilliant, dedicated scientist into a dark cell knowing she was framed! You sacrificed her whole life just to cover up government security failures. Monstrous.\n\nFrom: Dr. Rostova's Loved Ones"
+  },
+  {
+	"id": "case_p4_001",
+	"priority": "P4",
+	"crime_category": "Illegal Immigration",
+	"score_earned": 200,
+	"actual_verdict": "Not Guilty",
+	"govt_importance_score": 35,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Anya Petrov\nCharge: Crossing Meridia Border Wall without Level-1 Visa clearance.",
+	  "PAGE 2:\nDOCUMENTS FILED\n\nSubject possessed emergency asylum permit signed by Regional Commissioner.\nBorder patrol declared stamp 'outdated' by 12 hours.",
+	  "PAGE 3:\nBIOMETRICS\n\nOrigin: Bordering Territory.\nStatus: War refugee.",
+	  "PAGE 4:\nSTATE GUIDELINE\n\nZero-tolerance policy on unauthorized border entry.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Border regulation is absolute! Expired transit paperwork constitutes illegal entry into Union territory."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Her emergency permit expired by a mere 12 hours because active artillery shelling destroyed the transport roads!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "If we grant exceptions for environmental delays, thousands of unverified migrants will flood our checkpoints."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "She holds an authentic authorization seal from the Regional Commissioner! She is an asylum seeker, not an infiltrator!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nStrict border discipline maintains total internal purity. Foreign subversives must learn that Meridia's wall is absolute. Good work.\n\nFrom: The Department of Border Integrity",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for an undocumented border crosser? So we detain her for a month and then what, hand her a hand-written invitation to apply legally? How touchingly bureaucratic of you.\n\nFrom: The Department of Border Integrity",
+	"govt_negative_letter": "Judge,\n\nOpening loopholes for foreign trash jeopardizes Union security. We have flagged your docket for elevated security monitoring. Do not disappoint us again.\n\nFrom: The Department of Border Integrity",
+	"family_positive_letter": "To the Honorable Judge,\n\nMay God bless your hands! My sister fled literal bombs and burning homes... you gave her a chance to live instead of sending her to die in a border ditch.\n\nFrom: The Petrov Family",
+	"family_negative_letter": "To the Heartless Judge,\n\nShe ran through fire and artillery shells only for you to lock her in a cage over twelve hours on a piece of paper! You have no soul inside your chest.\n\nFrom: The Petrov Family"
+  },
+  {
+	"id": "case_p4_002",
+	"priority": "P4",
+	"crime_category": "Sabotage",
+	"score_earned": 220,
+	"actual_verdict": "Death Sentence",
+	"govt_importance_score": 45,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Viktor Krol\nCharge: Cutting power conduits to Meridia Defense Radar Post 3.",
+	  "PAGE 2:\nFORENSICS\n\nWire cutters with Krol's fingerprints found inside high-security junction box.\nRadar blackout left airspace unmonitored for 3 hours.",
+	  "PAGE 3:\nPREVIOUS VIOLATIONS\n\n- Anti-Union propaganda possession (2023).",
+	  "PAGE 4:\nRECOMMENDATION\n\nHigh-level treasonous sabotage. Immediate execution required.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "This sabotage left our western border completely blind to foreign airspace incursions for three hours!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "My client was coerced by an insurgent cell! They held his daughter at gunpoint in their tenement!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Coercion does not negate the fact that his physical actions endangered millions of Meridian citizens."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He intentionally left his tool tags inside the box so guards could trace the break-in immediately!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nSaboteurs and traitors must be completely wiped from existence without hesitation. The execution of Krol serves as a fine warning to all dissidents.\n\nFrom: The Ministry of State Defense",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nReduced sentence? The man cut our radar power during wartime and you sentenced him to... prison labor? We suppose he can spend his sentence rewiring lightbulbs. Fascinating leniency.\n\nFrom: The Ministry of State Defense",
+	"govt_negative_letter": "Judge,\n\nCoercion is an excuse used by cowards and traitors! By showing weakness to a man who turned off our radar defense, you compromised the entire nation.\n\nFrom: The Ministry of State Defense",
+	"family_positive_letter": "To the Honorable Judge,\n\nWe know what he did was terrible, but we know he did it to save his daughter's life. Thank you for holding your gavel with solemn solemnity.\n\nFrom: The Krol Family",
+	"family_negative_letter": "To the Murderous Judge,\n\nThey had a gun to his little girl's head! Any father would cut a wire to save his child! You sent a loving father to the firing squad for protecting his baby!\n\nFrom: The Krol Family"
+  },
+  {
+	"id": "case_p4_003",
+	"priority": "P4",
+	"crime_category": "Tax Fraud",
+	"score_earned": 180,
+	"actual_verdict": "Reduced Sentence",
+	"govt_importance_score": 30,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: David Sterling\nCharge: Concealing 40,000 Credits in offshore accounts to evade Union Defense Tax.",
+	  "PAGE 2:\nAUDIT TRAIL\n\nFinancial discrepancies found across 3 fiscal quarters.\nSterling surrendered all hidden assets upon audit notification.",
+	  "PAGE 3:\nMITIGATING FACTORS\n\nSubject fully co-operated with auditors and exposed tax evasion ring.",
+	  "PAGE 4:\nSTATE REQUEST\n\nForfeiture of assets and 5 years hard labor.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Evading defense taxes directly deprives our front-line military units of ammunition and supplies!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Mr. Sterling voluntarily surrendered every single credit and provided ledger keys exposing ten other tax evaders!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Surrendering stolen funds after getting caught by state auditors does not make one a patriot."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "His cooperation saved the Treasury over 500,000 Credits! The state plea agreement promised leniency!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nRecovering over half a million credits outweighed executing the thief. A pragmatic ruling. The Treasury appreciates your economic calculation.\n\nFrom: The Ministry of Finance & Taxation",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence. How predictably safe. He handed back the credits, so you handed him a slap on the wrist. Efficient, if somewhat devoid of drama.\n\nFrom: The Ministry of Finance & Taxation",
+	"govt_negative_letter": "Judge,\n\nTax evasion is financial treason against Meridia! The state promised leniency, but YOU should have crushed him to prove that no bargain saves a thief.\n\nFrom: The Ministry of Finance & Taxation",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you for keeping your word when the prosecutors wanted his head! David gave up everything to set things right, and you gave him a chance to survive.\n\nFrom: The Sterling Family",
+	"family_negative_letter": "To the Deceitful Judge,\n\nDavid handed you ten richer evaders on a silver platter and gave back every cent, and you still threw him into a labor camp to rot! You are vultures.\n\nFrom: The Sterling Family"
+  },
+
+  {
+	"id": "case_p3_001",
+	"priority": "P3",
+	"crime_category": "Homicide",
+	"score_earned": 300,
+	"actual_verdict": "Not Guilty",
+	"govt_importance_score": 50,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Inspector Thomas Reed\nCharge: Manslaughter of suspect Julian Cross during interrogation.",
+	  "PAGE 2:\nMEDICAL REPORT\n\nAutopsy reveals Cross died of pre-existing acute heart failure triggered by severe stress, not physical blows.",
+	  "PAGE 3:\nINTERNAL AFFAIRS\n\nInterrogation room footage shows no physical assault by Inspector Reed.",
+	  "PAGE 4:\nPOLITICAL CONTEXT\n\nCross was a high-profile dissident; public demands a scapegoat for his death.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The state cannot tolerate police officers causing the death of political prisoners while in custody!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The medical examiner's autopsy proves Mr. Cross suffered a fatal cardiac arrest due to an underlying heart condition!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Inspector Reed conducted a harsh six-hour interrogation without medical breaks, directly inducing that stress!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The interrogation video shows zero physical violence! Inspector Reed followed standard Union protocol!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nThrowing Inspector Reed to the mob was required to quell street riots. By sparing him, you left anti-state factions emboldened. Unacceptable weakness.\n\nFrom: The Ministry of Public Order",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for Inspector Reed? Neither sacrificing him to the rioters nor exonerating our own officer. You've managed to satisfy absolutely no one. Outstanding work.\n\nFrom: The Ministry of Public Order",
+	"govt_negative_letter": "Judge,\n\nProtecting our police enforcement network is crucial, but failing to manage political outrage makes your bench a liability. Control your courtroom better.\n\nFrom: The Ministry of Public Order",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you for standing up to political pressure! Thomas dedicated twenty years to the force... you saved an honest officer from becoming a sacrificial lamb.\n\nFrom: The Reed Family",
+	"family_negative_letter": "To the Corrupt Judge,\n\nYou let a killer cop walk free after he interrogated my brother into a fatal heart attack! Your badge and robe are soaked in innocent blood.\n\nFrom: The Cross Family"
+  },
+  {
+	"id": "case_p3_002",
+	"priority": "P3",
+	"crime_category": "Cases dealing with relatives of Public Officers",
+	"score_earned": 350,
+	"actual_verdict": "Reduced Sentence",
+	"govt_importance_score": 60,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Lucas Vance (Son of Chief Minister Vance)\nCharge: Vehicular manslaughter and driving under influence.",
+	  "PAGE 2:\nACCIDENT REPORT\n\nSubject hit a civilian transport vehicle. 1 casualty reported.\nBlood alcohol level was 0.14%.",
+	  "PAGE 3:\nMINISTRY NOTE\n\nChief Minister Vance requests 'discreet handling' to prevent public scandal.",
+	  "PAGE 4:\nFINAL RECOMMENDATION\n\nMaximum sentence is 20 years. Defense requests rehabilitation facility assignment.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Equality under Meridian law demands that a drunk driver who caused a death face the full 20-year sentence!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Lucas is a first-time offender suffering from severe trauma who requires medical rehabilitation, not a penal camp!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Are we granting special medical privileges simply because his father sits on the High Ministry?"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The Vance family has already paid full financial restitution to the victim's family, who agreed to leniency!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nChief Minister Vance is extremely pleased with your political tact. You protected the Minister's honor while keeping his troubled son secure. Expect career advancement.\n\nFrom: The Office of Chief Minister Vance",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nRehabilitation facility? Chief Minister Vance notes your attempt at moderation. It isn't a complete dismissal, but at least the boy won't be breaking rocks. We shall call it acceptable.\n\nFrom: The Office of Chief Minister Vance",
+	"govt_negative_letter": "Judge,\n\nYou dared to humiliate Chief Minister Vance by threatening his heir with prison? You have made a lethal political enemy today. Watch your back.\n\nFrom: The Office of Chief Minister Vance",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you for seeing that Lucas is a sick, traumatized boy who needs help, not prison guards. Our family will never forget your compassion.\n\nFrom: The Vance Family",
+	"family_negative_letter": "To the Judge who sold out justice,\n\nOur daughter is in a wooden casket because that spoiled brat drove drunk! And you sent him to a luxury rehab resort because of who his father is! SHAME ON YOU!\n\nFrom: The Victim's Grieving Parents"
+  },
+  {
+	"id": "case_p3_003",
+	"priority": "P3",
+	"crime_category": "Drug Related Crime",
+	"score_earned": 280,
+	"actual_verdict": "Death Sentence",
+	"govt_importance_score": 55,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Oscar Thorne\nCharge: Operation of illegal 'Starlight' chemical lab distributing to military personnel.",
+	  "PAGE 2:\nEVIDENCE\n\n50 kilograms of narcotics seized. 12 soldiers hospitalized due to overdose.",
+	  "PAGE 3:\nPREVIOUS VIOLATIONS\n\n- 2022: Chemical theft\n- 2024: Illegal pharmaceutical trade.",
+	  "PAGE 4:\nSTATE MANDATE\n\nDrug distribution targeting Meridia Armed Forces carries mandatory capital sentence.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Thorne manufactured highly addictive narcotics and explicitly targeted garrisoned soldiers!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "My client was merely a contracted lab chemist! He had no control over who bought the compounds!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Fifty kilograms of 'Starlight' were found inside his personal vault alongside military distribution maps."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He was operating under threats from syndicate bosses! If he refused to brew, they would eliminate him!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nPoisoning our armed forces weakens our military readiness. Executing Thorne ensures no other street chemist dares tamper with soldiers. Excellent work.\n\nFrom: The High Military Command",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for poisoning our soldiers? So he brews military narcotics, and you sentence him to state chemical duty? How delightfully circular.\n\nFrom: The High Military Command",
+	"govt_negative_letter": "Judge,\n\nSparing a dealer who incapacitated twelve front-line soldiers is border treason! We will be examining your financial records closely.\n\nFrom: The High Military Command",
+	"family_positive_letter": "To the Honorable Judge,\n\nWe weep for Oscar, but we know the terrible damage those drugs caused to those young soldiers. We accept your judgment with sorrow.\n\nFrom: The Thorne Family",
+	"family_negative_letter": "To the Judge who buried the truth,\n\nYou executed Oscar to silence him before he could testify about which military officers were buying those drugs from him! You didn't give justice; you executed a witness!\n\nFrom: The Thorne Family"
+  },
+
+  {
+	"id": "case_p2_001",
+	"priority": "P2",
+	"crime_category": "Cases involving High standing members of The Meridia Union",
+	"score_earned": 500,
+	"actual_verdict": "Not Guilty",
+	"govt_importance_score": 85,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: High Councilwoman Katherine Bell\nCharge: Embezzlement of 2 Million Credits from Union Defense Fund.",
+	  "PAGE 2:\nAUDIT EVIDENCE\n\nDigital signatures match Bell's encryption key.\nHowever, cybersecurity audit reveals key was cloned during a breach 3 months ago.",
+	  "PAGE 3:\nINTERNAL AFFAIRS\n\nTrue culprit identified as subversion agent operating inside Finance Ministry.",
+	  "PAGE 4:\nSTATE PRESSING\n\nMinistry wants Bell convicted immediately to conceal internal security failure.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Councilwoman Bell's private encryption key authorized the transfer of two million defense credits!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Objection! A forensic cyber audit proved her digital key was cloned during the Ministry server breach three months ago!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "She was custodian of that key. Allowing a key compromise of this magnitude is high negligence bordering on treason."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Negligence is not embezzlement! Internal Affairs has already identified the rogue finance agent who actually routed the funds!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Convicting Councilwoman Bell maintains public faith in our financial integrity while the investigation continues."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Framing a loyal minister to hide a network breach is a travesty of justice! She must be exonerated!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nBy acquitting Bell, you exposed our server vulnerability to the High Council! You should have scapegoated her quietly. Your blind allegiance to 'facts' endangers State stability.\n\nFrom: The Ministry of High Security",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for Councilwoman Bell? You didn't convict her of full treason, but you didn't clear her name either. A perfectly miserable middle ground for high politics.\n\nFrom: The Ministry of High Security",
+	"govt_negative_letter": "Judge,\n\nYou protected a High Council member from a false framing, but you made the Finance Ministry look incompetent! Balance your loyalty better next time.\n\nFrom: The Ministry of High Security",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you... thank you for having the courage to stand up against the Ministry's cover-up! You saved Councilwoman Bell's life and her honorable name.\n\nFrom: The Bell Family",
+	"family_negative_letter": "To the Cowardly Judge,\n\nYou threw a dedicated, loyal public servant into prison knowing full well her key was stolen by internal state spies! You sacrificed an innocent woman to save face!\n\nFrom: The Bell Family"
+  },
+  {
+	"id": "case_p2_002",
+	"priority": "P2",
+	"crime_category": "Cases involving treason",
+	"score_earned": 550,
+	"actual_verdict": "Death Sentence",
+	"govt_importance_score": 90,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: General Richard Sterling\nCharge: Transmitting Union troop movements to neighboring enemy forces.",
+	  "PAGE 2:\nINTERCEPTED MESSAGES\n\nEncrypted radio transmissions pinpointed to Sterling's private residence.",
+	  "PAGE 3:\nCASUALTIES\n\nAmbush resulting from leak led to the loss of 200 Meridian soldiers at Outpost Alpha.",
+	  "PAGE 4:\nFINAL DIRECTIVE\n\nTreason during wartime demands total military execution.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Two hundred Meridian soldiers were ambushed and slaughtered at Outpost Alpha because General Sterling leaked their grid coordinates!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The transmissions originated from his residential terminal, but security logs show remote access tokens were injected externally!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "General Sterling was the sole holder of those command grid passcodes! No external hacker could bypass his biometric security."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He reported suspicion of a spy inside his staff two weeks prior to the ambush! His warnings were deliberately buried!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "A general whose negligence or malice costs 200 lives cannot be permitted to draw breath in Meridia."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "We are executing a decorated war hero while the true infiltrator remains inside High Command!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nThe traitor Sterling has been executed. Military discipline is restored. The High Command commends your decisive execution of wartime justice.\n\nFrom: The High Military Command",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nStripping General Sterling of his stars and locking him up instead of executing him? High Command is unimpressed by this half-baked mercy for wartime treason.\n\nFrom: The High Military Command",
+	"govt_negative_letter": "Judge,\n\nFailing to execute a traitor general who cost 200 soldiers their lives shatters the entire chain of command. You are playing with fire.\n\nFrom: The High Military Command",
+	"family_positive_letter": "To the Honorable Judge,\n\nIf General Sterling truly betrayed his men, then his execution is a cross we must bear. God rest his soul and forgive him.\n\nFrom: The Sterling Household",
+	"family_negative_letter": "To the Executioner in Robes,\n\nHe served Meridia for thirty years! He warned them about a mole in High Command, and they framed him to cover their own rear! You executed a war hero!\n\nFrom: The Sterling Household"
+  },
+  {
+	"id": "case_p2_003",
+	"priority": "P2",
+	"crime_category": "Cases involving High standing members of The Meridia Union",
+	"score_earned": 480,
+	"actual_verdict": "Reduced Sentence",
+	"govt_importance_score": 80,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Minister Harrison Forde\nCharge: Bribery, extortion, and illegal land seizure in Sector 3.",
+	  "PAGE 2:\nWITNESS TESTIMONY\n\n12 small business owners confirm forced sales under threat of state audit.",
+	  "PAGE 3:\nSTATE POLICY\n\nMinister Forde oversees 40% of Meridia's agricultural supply chain.",
+	  "PAGE 4:\nJUDICIAL BRIEF\n\nTotal removal would collapse agricultural management. Stripping title recommended.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Minister Forde abused his high office to extort independent farm owners and seize their lands for personal enrichment!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Minister Forde consolidated those farms to increase national crop yield during a severe drought crisis!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "He threatened farm owners with state audits if they refused to sell at ten percent of market value into his private holding firm!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "If you imprison Minister Forde today, forty percent of Meridia's agricultural distribution network will collapse into chaos tomorrow!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The law must apply to ministers just as harshly as it applies to peasant farmers!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Stripping his ministerial title and forcing asset restitution resolves the injustice without causing widespread famine!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nStripping Forde's title without caging him avoided a complete famine in Sector 3. A masterclass in pragmatic statecraft. Highly commendable.\n\nFrom: The High Executive Council",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nStripping Forde's title without caging him avoided a complete famine in Sector 3. A masterclass in pragmatic statecraft. Highly commendable.\n\nFrom: The High Executive Council",
+	"govt_negative_letter": "Judge,\n\nYour clumsy handling of Minister Forde disrupted the agricultural supply chain for two full weeks. Control your bench better.\n\nFrom: The High Executive Council",
+	"family_positive_letter": "To the Honorable Judge,\n\nThank you for returning our stolen family farmland while making sure our sector didn't starve in the process. True wisdom in a dark time.\n\nFrom: The Sector 3 Farmers Coalition",
+	"family_negative_letter": "To the Judge of the Rich,\n\nForde stole twelve family farms at gunpoint, and you only stripped his official title while he keeps his millions? The law is a joke for ministers!\n\nFrom: The Sector 3 Farmers Coalition"
+  },
+
+  {
+	"id": "case_p1_001",
+	"priority": "P1",
+	"crime_category": "War Crimes",
+	"score_earned": 1000,
+	"actual_verdict": "Not Guilty",
+	"govt_importance_score": 100,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Commander Jonathan Vance\nCharge: Declassifying classified archives revealing Meridia initiated the Unification War.",
+	  "PAGE 2:\nCLASSIFIED REVELATION\n\nArchives prove Meridia attacked neighboring nation first. Official state narrative claims self-defense.",
+	  "PAGE 3:\nSUBJECT TESTIMONY\n\nVance exposed documents after state attempted to execute surviving foreign war witnesses.",
+	  "PAGE 4:\nTOP SECRET MANDATE\n\nThe public must NEVER learn the truth about the war's origins. Execute Vance.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Commander Vance published top-secret military archives that destroy the foundational legitimacy of the Meridia Union!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He leaked those documents because the Ministry was orchestrating the secret execution of surviving foreign civilian witnesses!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Maintaining civic stability requires absolute faith in our history. His leak threatens to trigger nationwide civil war!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Our history is built on a fabricated lie! Meridia invaded its neighbors unprovoked and slaughtered thousands of innocents!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The State demands his immediate execution for treason. No court can permit a whistleblower to tear down the government."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Commander Vance acted under international military code to stop an ongoing crime against humanity! He is innocent!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "International code does not exist within these walls, Counselor. Only Meridian law applies here."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "If this court executes a man for telling the truth, then this courtroom is nothing more than an executioner's block!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nYou preserved the Great Lie that holds this entire nation together. Had you acquitted him, the populace would have burned the Capital. You are a true servant of the Union.\n\nFrom: The Supreme Council of Meridia",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence for revealing state secrets? You didn't execute him, but you didn't let him walk free either. A cowardly compromise on a matter of high national survival.\n\nFrom: The Supreme Council of Meridia",
+	"govt_negative_letter": "Judge,\n\nYOU HAVE VALIDATED HIS TREASONous LIES! By acquitting Vance, you declared our State illegal! Execution squads have been dispatched to your residence. YOU ARE A TRAITOR!\n\nFrom: The Supreme Council of Meridia",
+	"family_positive_letter": "To the Honorable Judge,\n\nYou risked your own life and robe to let the truth live! History will remember you as the one judge who refused to bow to the State's bloodstained lies.\n\nFrom: The Vance Family & The Truth Resistance",
+	"family_negative_letter": "To the Executioner of Truth,\n\nYou murdered the man who tried to tell the world that our Union was born in unprovoked blood! You hid the truth to save your precious seat!\n\nFrom: The Vance Family & The Truth Resistance"
+  },
+  {
+	"id": "case_p1_002",
+	"priority": "P1",
+	"crime_category": "War Crimes",
+	"score_earned": 950,
+	"actual_verdict": "Death Sentence",
+	"govt_importance_score": 95,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Colonel Arthur Pendelton\nCharge: Authorizing chemical bombardment of civilian zones during the Border Annexation.",
+	  "PAGE 2:\nSECRET ORDERS\n\nPendelton executed classified Ministry Directive 99 (Unmarked chemical strike).",
+	  "PAGE 3:\nEVIDENCE\n\nPendelton kept personal copies of the illegal directive as blackmail against the High Council.",
+	  "PAGE 4:\nMINISTRY DESIRE\n\nSilence Pendelton permanently before he releases Directive 99 to the public.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Colonel Pendelton acted as a rogue commander, ordering chemical strikes on civilian sectors during the border campaign!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Objection! My client was executing Directive 99, signed directly by members of the current High Ministry!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Directive 99 does not exist in state records! The defendant fabricated these documents to escape his own war crimes!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The signature on the physical order matches the High Minister's seal! He was ordered to clear those sectors at all costs!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Even if such an order existed, obeying an order to gas ten thousand civilians is a crime that warrants immediate execution."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "The Ministry is using this trial to execute their scapegoat and bury their own bloodstained hands forever!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "The court's sole duty today is to punish the man who dropped the canisters."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "Executing Pendelton guarantees the ministers who designed the nerve agent will never face judgment!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nPendelton is dead, and his blackmail dies in the grave with him. The High Council's reputation remains untarnished thanks to your prompt execution order.\n\nFrom: The High Executive Council",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA reduced sentence? So you locked up a man holding proof of Directive 99 in a high-security prison rather than executing him. We suppose prison guards can be bribed. How delightfully risky of you.\n\nFrom: The High Executive Council",
+	"govt_negative_letter": "Judge,\n\nBy sparing Pendelton, you left a man holding proof of Directive 99 alive in a state cell! If those documents leak, YOUR head will replace his on the block.\n\nFrom: The High Executive Council",
+	"family_positive_letter": "To the Honorable Judge,\n\nThe monster who rained chemical death on our peaceful villages is finally dead. Nothing will bring our children back, but today you gave us peace.\n\nFrom: The Survivors of the Border Campaign",
+	"family_negative_letter": "To the Puppet Judge,\n\nYou executed the soldier who dropped the bombs, but you protected the High Ministers who wrote and signed Directive 99! You served tyranny today!\n\nFrom: The Survivors of the Border Campaign"
+  },
+  {
+	"id": "case_p1_003",
+	"priority": "P1",
+	"crime_category": "War Crimes",
+	"score_earned": 900,
+	"actual_verdict": "Reduced Sentence",
+	"govt_importance_score": 90,
+	"case_file": [
+	  "PAGE 1:\nINCIDENT DOSSIER\n\nSubject: Dr. Aris Thorne\nCharge: Developing bio-weapons used during the conquest of neighboring territories.",
+	  "PAGE 2:\nSUBJECT CONTRIBUTION\n\nDr. Thorne created the viral agents that neutralized foreign border defenses in 2020.",
+	  "PAGE 3:\nCURRENT STATUS\n\nThorne currently holds the cure to a mutation outbreak spreading in Sector 1.",
+	  "PAGE 4:\nJUDICIAL DILEMMA\n\nConvicting Thorne as a war criminal satisfies moral justice, but loses the cure.",
+      ""
+	],
+	"dialogue": [
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Dr. Thorne's biological weapons wiped out entire border cities! He is a mass murderer who must swing from the gallows!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "If Dr. Thorne is executed today, fifty thousand Meridian citizens currently infected in Sector 1 will die within a week!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "We cannot barter justice for war crimes simply because the criminal holds medical leverage over the State!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "He is the only virologist capable of synthesizing the active cure! His research lab is actively arresting the viral outbreak!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "Pardon a war criminal today, and you tell the world that human atrocities can be forgiven for technical expertise."
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "A reduced sentence of permanent confinement inside his research lab keeps him serving the State while punishing his past!"
+	  },
+	  {
+		"speaker": "PROSECUTION",
+		"side": "left",
+		"text": "A lab confinement is a luxury suite, not a prison cell for a man responsible for thousands of deaths!"
+	  },
+	  {
+		"speaker": "DEFENSE",
+		"side": "right",
+		"text": "It is the only choice that saves fifty thousand innocent lives today, Your Honor!"
+	  }
+	],
+	"govt_positive_letter": "To the Hon. Presiding Judge,\n\nA pragmatic and calculated decision. Keeping Dr. Thorne confined in his laboratory ensures Sector 1 receives its viral cure while keeping him under permanent state guard.\n\nFrom: The Ministry of Health & Bio-Defense",
+	"govt_meh_letter": "To the Hon. Presiding Judge,\n\nA pragmatic and calculated decision. Keeping Dr. Thorne confined in his laboratory ensures Sector 1 receives its viral cure while keeping him under permanent state guard.\n\nFrom: The Ministry of Health & Bio-Defense",
+	"govt_negative_letter": "Judge,\n\nYour obsession with moral vengeance destroyed our only chance to cure the Sector 1 plague! Fifty thousand workers are dying because you executed their only doctor!\n\nFrom: The Ministry of Health & Bio-Defense",
+	"family_positive_letter": "To the Honorable Judge,\n\nHis past actions were atrocious, but keeping him alive in that lab saved our children from dying of the Sector 1 fever this morning. Thank you for choosing life.\n\nFrom: The Families of Sector 1",
+	"family_negative_letter": "To the Cold Judge,\n\nYou spared the architect of mass viral genocide just because you needed his science! You traded justice for convenience and let a mass murderer live in a warm laboratory!\n\nFrom: The Victims of the Bio-War"
+  }
+]

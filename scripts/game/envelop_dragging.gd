@@ -1,3 +1,4 @@
+# Letter.gd
 extends Control
 
 const TEXTURE_CLOSED = preload("res://assets/sprites/letter.png")
@@ -12,13 +13,11 @@ var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 
-# Simple data string for the letter's contents
-var letter_content: String = "Dear Judge \n Thanks for helping me what case, evidence was really flimsy. \n I will make sure you get a promotion \n Sincerely, \n Procecutor"
+# Dynamic letter content passed during spawning
+var letter_content: String = "Official Notice:\nReview pending documents."
 
 func _ready() -> void:
 	gui_input.connect(_on_gui_input)
-	
-	# Keep text hidden by default while it sits inside the closed envelope pile
 	document_text.visible = false
 	document_text.text = letter_content
 	
@@ -43,30 +42,23 @@ func _on_gui_input(event: InputEvent) -> void:
 		global_position = get_global_mouse_position() - drag_offset
 
 func check_zone_collision() -> void:
-	# 1. Define the Rect2 for both the envelope and the middle zone
 	var stable_size = Vector2(BASELINE_WIDTH, BASELINE_HEIGHT)
 	var my_rect = Rect2(global_position, stable_size)
-	
 	var zone_rect = Rect2(middle_zone.global_position, middle_zone.size)
 	
-	# 3. Calculate areas
 	var intersection_rect = my_rect.intersection(zone_rect)
-	
-	# 3. Calculate areas using the fixed baseline
-	var my_area = my_rect.get_area() # Will always be 4000
+	var my_area = my_rect.get_area()
 	var overlap_area = intersection_rect.get_area()
 	
 	if overlap_area >= (my_area * 0.5):
 		if texture_rect.texture != TEXTURE_OPENED:
-			size = Vector2(90, 110)  # Enlarge the letter when it unfolds on the mat
-			rotation_degrees = 0.0  # Straighten the letter when it unfolds on the mat
+			size = Vector2(90, 110)
+			rotation_degrees = 0.0
 			texture_rect.texture = TEXTURE_OPENED
-			# Show the text layer when unfolded on the mat
 			document_text.visible = true
 	else:
 		if texture_rect.texture != TEXTURE_CLOSED:
-			size = Vector2(76, 50)  # Shrink the letter back down when thrown off the mat
-			rotation_degrees = randf_range(-12.0, 12.0)  # Reapply a random tilt when thrown back into the envelope pile
+			size = Vector2(76, 50)
+			rotation_degrees = randf_range(-12.0, 12.0)
 			texture_rect.texture = TEXTURE_CLOSED
-			# Hide the text completely when thrown off the mat back into an envelope
 			document_text.visible = false

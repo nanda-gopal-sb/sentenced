@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="Sentenced"
-run/main_scene="uid://dsuvva1t0pb25"
+run/main_scene="uid://r4sm4k8nvc8c"
 config/features=PackedStringArray("4.6", "Mobile")
+
+[autoload]
+
+GameManager="*uid://ducbc351n14v0"
 
 [display]
 

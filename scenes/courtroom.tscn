@@ -70,6 +70,7 @@
 [ext_resource type="Texture2D" uid="uid://cnsjy7ej4rifh" path="res://assets/gavel/frame_0064.png" id="68_2r7k2"]
 [ext_resource type="Texture2D" uid="uid://8b2q5fr4ptd0" path="res://assets/gavel/frame_0065.png" id="69_2elfi"]
 [ext_resource type="Texture2D" uid="uid://6uv1w365f34m" path="res://assets/gavel/frame_0066.png" id="70_0i62n"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="71_qxxmb"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u2xm6"]
 animations = [{
@@ -304,43 +305,47 @@ expand_mode = 1
 
 [node name="Dialouge_Left" type="Panel" parent="." unique_id=1720302045]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 70.0
-offset_right = 164.0
-offset_bottom = 302.0
+offset_left = 33.0
+offset_top = 91.0
+offset_right = 211.0
+offset_bottom = 168.0
 script = ExtResource("3_arjnd")
 
 [node name="SpeakerLabel" type="Label" parent="Dialouge_Left" unique_id=2123241606]
 layout_mode = 0
 offset_right = 122.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("71_qxxmb")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Dialouge_Left" unique_id=2111304295]
 layout_mode = 0
 offset_left = 5.0
 offset_top = 35.0
-offset_right = 142.0
-offset_bottom = 216.0
+offset_right = 177.0
+offset_bottom = 126.0
+theme_override_fonts/normal_font = ExtResource("71_qxxmb")
 
 [node name="Dialouge_Left2" type="Panel" parent="." unique_id=1416569864]
 layout_mode = 0
-offset_left = 482.0
-offset_top = 71.0
-offset_right = 641.0
-offset_bottom = 303.0
+offset_left = 437.0
+offset_top = 87.0
+offset_right = 601.0
+offset_bottom = 160.0
 script = ExtResource("3_arjnd")
 
 [node name="SpeakerLabel" type="Label" parent="Dialouge_Left2" unique_id=179132419]
 layout_mode = 0
 offset_right = 128.0
 offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("71_qxxmb")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Dialouge_Left2" unique_id=443855011]
 layout_mode = 0
-offset_left = 2.0
-offset_top = 38.0
-offset_right = 151.0
-offset_bottom = 204.0
+offset_left = 3.0
+offset_top = 39.0
+offset_right = 165.0
+offset_bottom = 125.0
+theme_override_fonts/normal_font = ExtResource("71_qxxmb")
 
 [node name="Panel" type="Panel" parent="." unique_id=141878676]
 layout_mode = 0
@@ -361,19 +366,23 @@ theme_override_constants/separation = 8
 [node name="Death_Sentence" type="Button" parent="Panel/VBoxContainer" unique_id=1492109585]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("71_qxxmb")
 text = "Death "
 
 [node name="Not Guilty" type="Button" parent="Panel/VBoxContainer" unique_id=363644878]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("71_qxxmb")
 text = "Not Guilty"
 
 [node name="ReducedSentence" type="Button" parent="Panel/VBoxContainer" unique_id=1144506317]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("71_qxxmb")
 text = "Reduced "
 
 [node name="FadeOverlay" type="ColorRect" parent="." unique_id=718247538]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -385,25 +394,30 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=129247619]
+visible = false
 position = Vector2(330, 105.999985)
 scale = Vector2(0.3222657, 0.29360455)
 sprite_frames = SubResource("SpriteFrames_u2xm6")
 frame_progress = 0.9133653
 
 [node name="ResultLabel" type="Label" parent="." unique_id=689146123]
+visible = false
 layout_mode = 0
 offset_left = 90.0
 offset_top = 155.0
 offset_right = 566.0
 offset_bottom = 240.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("71_qxxmb")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ContinueButton" type="Button" parent="." unique_id=1941778683]
+visible = false
 layout_mode = 0
 offset_left = 283.0
 offset_top = 281.0
 offset_right = 362.0
 offset_bottom = 312.0
+theme_override_fonts/font = ExtResource("71_qxxmb")
 text = "Continue"

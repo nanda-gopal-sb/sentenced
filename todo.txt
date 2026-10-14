@@ -1,7 +1,3 @@
-- Creating cases for demo -> letter also
-- Scoring System 
-- Level System -> You are promoted text
-- Making everything look pretty 
 - Profile Display
 - Adding Music
 - Starting Menu
