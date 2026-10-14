@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dyd56a3elwcfv" path="res://scripts/game/StartMenu.gd" id="1_m7x51"]
 [ext_resource type="Texture2D" uid="uid://b00g5jqv23qa7" path="res://assets/sprites/start_menu_background.jpg" id="1_ouf4f"]
 [ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/fonts/Merchant Copy.ttf" id="2_thu50"]
+[ext_resource type="AudioStream" uid="uid://ddvgf653isb5x" path="res://assets/sounds/start_menu_music.wav" id="4_fgoeh"]
 
 [node name="StartMenu" type="Control" unique_id=1718917362]
 layout_mode = 3
@@ -55,3 +56,8 @@ theme_override_fonts/font = ExtResource("2_thu50")
 theme_override_font_sizes/font_size = 40
 placeholder_text = "Enter Name"
 alignment = 1
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=450872374]
+stream = ExtResource("4_fgoeh")
+volume_db = -4.017
+autoplay = true
