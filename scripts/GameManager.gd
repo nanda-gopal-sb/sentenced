@@ -1,6 +1,6 @@
 # GameManager.gd
 extends Node
-
+var player_name: String = "Hon. Judge" # Default fall-back name
 var cases_data: Array = []
 var current_case_index: int = 0
 var current_case: Dictionary = {}

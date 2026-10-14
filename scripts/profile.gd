@@ -63,8 +63,8 @@ func format_profile_data() -> String:
 	else:
 		next_level_str = "MAX LEVEL REACHED"
 		
-	var info = "[b]JUDICIAL CREDENTIALS[/b]\n\n"
-	info += "Name: " + player_name + "\n\n"
+	var info = "JUDICIAL CREDENTIALS\n\n"
+	info += "Name: " + GameManager.player_name + "\n\n"
 	info += "Rank/Level: Tier " + str(current_lvl) + "\n\n"
 	info += "Total Points: " + str(current_pts) + "\n\n"
 	info += "Next Promotion: " + next_level_str
