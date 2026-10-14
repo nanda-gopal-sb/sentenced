@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dupf63skdotyr"
-path="res://.godot/imported/summoncourt640360og.png-3a93679efb23ccd190cd33af4b5f58eb.ctex"
+uid="uid://b00g5jqv23qa7"
+path="res://.godot/imported/start_menu_background.jpg-5f9a96c2f82791ee22e2cbf1a83b5c45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/summoncourt640360og.png"
-dest_files=["res://.godot/imported/summoncourt640360og.png-3a93679efb23ccd190cd33af4b5f58eb.ctex"]
+source_file="res://assets/sprites/start_menu_background.jpg"
+dest_files=["res://.godot/imported/start_menu_background.jpg-5f9a96c2f82791ee22e2cbf1a83b5c45.ctex"]
 
 [params]
 

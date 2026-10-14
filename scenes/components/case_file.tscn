@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://b4uaiydi6e78d"]
 
-[ext_resource type="Script" uid="uid://c37mj3ya8slw6" path="res://scripts/game/cases_dragging.gd" id="1_7d02j"]
+[ext_resource type="Script" uid="uid://c37mj3ya8slw6" path="res://scripts/components/case_folder.gd" id="1_7d02j"]
 [ext_resource type="Texture2D" uid="uid://ryuna44lqaev" path="res://assets/sprites/folder_closed.png" id="2_2cn7k"]
-[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="3_ho0yh"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/fonts/Merchant Copy.ttf" id="3_ho0yh"]
 [ext_resource type="Texture2D" uid="uid://b37vvw5bba0n2" path="res://assets/sprites/turn_button.png" id="4_2cn7k"]
 [ext_resource type="Texture2D" uid="uid://b8uoc0ad50al5" path="res://assets/sprites/turn_left.png" id="5_lhpo0"]
 [ext_resource type="AudioStream" uid="uid://d7mtpg7nt8d8" path="res://assets/sounds/paper.wav" id="6_jm5sf"]

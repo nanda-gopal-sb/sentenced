@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lwxt53tkl2y2"
-path="res://.godot/imported/Sad Chibi Woman in Armchair.png-51bd871960660023e7fec45373f2a8ff.ctex"
+uid="uid://dupf63skdotyr"
+path="res://.godot/imported/courtroom_scene.png-fd5454ea7fc85994e7590a1d97df5d78.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Sad Chibi Woman in Armchair.png"
-dest_files=["res://.godot/imported/Sad Chibi Woman in Armchair.png-51bd871960660023e7fec45373f2a8ff.ctex"]
+source_file="res://assets/sprites/courtroom_scene.png"
+dest_files=["res://.godot/imported/courtroom_scene.png-fd5454ea7fc85994e7590a1d97df5d78.ctex"]
 
 [params]
 

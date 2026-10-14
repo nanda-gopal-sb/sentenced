@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://r4sm4k8nvc8c"]
 
-[ext_resource type="Script" uid="uid://bbr2xmgj75qnl" path="res://scripts/game/ChamberScene.gd" id="1_topoe"]
 [ext_resource type="Texture2D" uid="uid://gr6aoncx7hav" path="res://assets/sprites/chamber_scene.png" id="2_556kj"]
-[ext_resource type="Script" uid="uid://bln3bialsyj20" path="res://scripts/game/Desk.gd" id="3_5k8bo"]
+[ext_resource type="Script" uid="uid://bln3bialsyj20" path="res://scripts/game/ChamberScene.gd" id="3_5k8bo"]
 [ext_resource type="Texture2D" uid="uid://dmsenbqhd8yye" path="res://assets/sprites/desk.png" id="3_b3u6c"]
 [ext_resource type="AudioStream" uid="uid://cjafg1wk8oej" path="res://assets/sounds/chamber.wav" id="5_tdh1v"]
 
@@ -13,7 +12,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_topoe")
 
 [node name="ChamberRoom" type="TextureRect" parent="." unique_id=1109299106]
 layout_mode = 1

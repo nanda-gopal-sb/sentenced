@@ -14,7 +14,7 @@ var current_level: int = 1
 const LEVEL_THRESHOLDS: Array[int] = [0, 300, 850, 1700, 3200, 5200]
 
 func _ready() -> void:
-	load_cases_from_json("res://data/data.json")
+	load_cases_from_json("res://assets/data/data.json")
 	if cases_data.size() > 0:
 		set_current_case(0)
 

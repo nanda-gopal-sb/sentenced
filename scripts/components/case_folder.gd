@@ -1,4 +1,3 @@
-# CaseFolder.gd
 extends Control
 
 const TEXTURE_CLOSED = preload("res://assets/sprites/folder_closed.png")
@@ -26,11 +25,9 @@ var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
 
-# Tracks whether the folder is currently resting/open over the middle zone
 var is_inside_zone: bool = false
 
 func _ready() -> void:
-	# Load pages dynamically from GameManager's current case file array
 	if GameManager.current_case.has("case_file"):
 		folder_pages = GameManager.current_case["case_file"]
 
@@ -68,7 +65,6 @@ func _on_gui_input(event: InputEvent) -> void:
 
 func play_paper_sound() -> void:
 	if paper_sound_player:
-		# Pitch variation makes entering and leaving sound slightly distinct
 		paper_sound_player.pitch_scale = randf_range(0.9, 1.1)
 		paper_sound_player.play()
 
@@ -82,7 +78,6 @@ func check_zone_collision() -> void:
 	var overlap_area = intersection_rect.get_area()
 	
 	if overlap_area >= (my_area * 0.5):
-		# Played when entering the zone onto the middle desk area
 		if not is_inside_zone:
 			play_paper_sound()
 			is_inside_zone = true
@@ -96,7 +91,6 @@ func check_zone_collision() -> void:
 			case_label.visible = false
 			page_turn_btn.visible = true
 	else:
-		# Played when dragged away from the middle desk zone
 		if is_inside_zone:
 			play_paper_sound()
 			is_inside_zone = false
@@ -165,4 +159,4 @@ func _on_address_court() -> void:
 	await get_tree().create_timer(2.0).timeout
 	
 	# Transition to courtroom to try the current_case (which is now Case N+1)
-	get_tree().change_scene_to_file("res://scenes/courtroom.tscn")
+	get_tree().change_scene_to_file("res://scenes/CourtRoom.tscn")

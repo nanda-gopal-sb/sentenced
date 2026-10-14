@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://6hm0nvt1l33q"]
 
-[ext_resource type="Script" uid="uid://dyd56a3elwcfv" path="res://scripts/start_menu.gd" id="1_m7x51"]
-[ext_resource type="Texture2D" uid="uid://b00g5jqv23qa7" path="res://assets/sprites/1c5be0b0e990dc94b4e2ff1dcc0747b0.jpg" id="1_ouf4f"]
-[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="2_thu50"]
+[ext_resource type="Script" uid="uid://dyd56a3elwcfv" path="res://scripts/game/StartMenu.gd" id="1_m7x51"]
+[ext_resource type="Texture2D" uid="uid://b00g5jqv23qa7" path="res://assets/sprites/start_menu_background.jpg" id="1_ouf4f"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/fonts/Merchant Copy.ttf" id="2_thu50"]
 
 [node name="StartMenu" type="Control" unique_id=1718917362]
 layout_mode = 3
