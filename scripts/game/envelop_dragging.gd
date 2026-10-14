@@ -6,12 +6,17 @@ const TEXTURE_OPENED = preload("res://assets/sprites/paper.png")
 
 @onready var texture_rect: TextureRect = $TextureRect
 @onready var document_text: RichTextLabel = $DocumentText
+@onready var paper_sound_player: AudioStreamPlayer2D = $PaperSoundPlayer
+
 const BASELINE_WIDTH: float = 80.0
 const BASELINE_HEIGHT: float = 50.0
 
 var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
+
+# Tracks whether the letter is currently resting/open over the middle zone
+var is_inside_zone: bool = false
 
 # Dynamic letter content passed during spawning
 var letter_content: String = "Official Notice:\nReview pending documents."
@@ -41,6 +46,12 @@ func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and is_dragging:
 		global_position = get_global_mouse_position() - drag_offset
 
+func play_paper_sound() -> void:
+	if paper_sound_player:
+		# Random pitch variation makes repeated openings/closings sound natural
+		paper_sound_player.pitch_scale = randf_range(0.9, 1.1)
+		paper_sound_player.play()
+
 func check_zone_collision() -> void:
 	var stable_size = Vector2(BASELINE_WIDTH, BASELINE_HEIGHT)
 	var my_rect = Rect2(global_position, stable_size)
@@ -51,12 +62,22 @@ func check_zone_collision() -> void:
 	var overlap_area = intersection_rect.get_area()
 	
 	if overlap_area >= (my_area * 0.5):
+		# Played when dragged into the middle zone (opening)
+		if not is_inside_zone:
+			play_paper_sound()
+			is_inside_zone = true
+
 		if texture_rect.texture != TEXTURE_OPENED:
 			size = Vector2(90, 110)
 			rotation_degrees = 0.0
 			texture_rect.texture = TEXTURE_OPENED
 			document_text.visible = true
 	else:
+		# Played when dragged away from the middle zone (closing)
+		if is_inside_zone:
+			play_paper_sound()
+			is_inside_zone = false
+
 		if texture_rect.texture != TEXTURE_CLOSED:
 			size = Vector2(76, 50)
 			rotation_degrees = randf_range(-12.0, 12.0)

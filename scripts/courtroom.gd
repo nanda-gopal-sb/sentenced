@@ -11,6 +11,7 @@ extends Control
 @onready var fade_overlay = $FadeOverlay
 @onready var result_label = $ResultLabel
 @onready var continue_button = $ContinueButton
+@onready var gavel_audio: AudioStreamPlayer2D = $GavelAudio
 
 var dialogue: Array = []
 var current_line: int = 0
@@ -79,7 +80,6 @@ func _input(event: InputEvent) -> void:
 		show_line()
 
 func calculate_points_earned() -> int:
-	# Read actual_verdict and score_earned from last_judged_case snapshot
 	var actual = GameManager.last_judged_case.get("actual_verdict", "")
 	if GameManager.last_chosen_verdict == actual:
 		return GameManager.last_judged_case.get("score_earned", 100)
@@ -88,40 +88,41 @@ func calculate_points_earned() -> int:
 func type_result_text(full_text: String, speed: float = 0.03):
 	result_label.text = ""
 	result_label.visible = true
+	
 	for character in full_text:
 		result_label.text += character
+			
 		await get_tree().create_timer(speed).timeout
 
 func _on_verdict_chosen(verdict_name: String):
 	is_waiting_for_verdict = true
 	
-	# Snapshot current case (Case N) and advance GameManager to Case N+1
 	GameManager.finalize_verdict(verdict_name)
 	
 	verdict_panel.hide()
 	dialogue_left.hide_dialogue()
 	dialogue_right.hide_dialogue()
 	
-	# 1. Fade to black
 	if fade_overlay:
 		fade_overlay.visible = true
 		var tween = create_tween()
 		tween.tween_property(fade_overlay, "modulate:a", 1.0, 1.5)
 		await tween.finished
 		
-	# 2. Brief pause in the dark
 	await get_tree().create_timer(1.0).timeout
 	
-	# 3. Play gavel strike animation for ALL verdicts
+	# 3. Play gavel strike animation and sound for ALL verdicts
 	death_animation.visible = true
 	death_animation.play("default")
 	
+	if gavel_audio:
+		gavel_audio.play()
+		
 	await get_tree().create_timer(2.5).timeout
 		
 	death_animation.visible = false
 	await get_tree().create_timer(0.5).timeout
 		
-	# 4. Calculate points against Case N via last_judged_case
 	var earned_points = calculate_points_earned()
 	var promoted = GameManager.add_score_and_check_promotion(earned_points)
 	
@@ -129,11 +130,9 @@ func _on_verdict_chosen(verdict_name: String):
 	if promoted:
 		full_message += "\n\nPROMOTED TO LEVEL " + str(GameManager.current_level) + "!"
 		
-	# 5. Typewriter result display
 	if result_label:
 		await type_result_text(full_message, 0.03)
 		
-	# 6. Show return button
 	if continue_button:
 		continue_button.show()
 

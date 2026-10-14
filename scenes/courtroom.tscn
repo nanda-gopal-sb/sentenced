@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://b0jo5615mqhbd" path="res://assets/sprites/young women.png" id="2_cn4mi"]
 [ext_resource type="Script" uid="uid://8chksjidj6g" path="res://scripts/game/dialouge.gd" id="3_arjnd"]
 [ext_resource type="Texture2D" uid="uid://bea0w31xc8dl4" path="res://assets/gavel/frame_0001.png" id="5_ghetg"]
+[ext_resource type="AudioStream" uid="uid://cui25ep8yspn3" path="res://assets/sounds/type.mp3" id="6_j5t0r"]
 [ext_resource type="Texture2D" uid="uid://ct2xc3aqm67j1" path="res://assets/gavel/frame_0002.png" id="6_qxxmb"]
 [ext_resource type="Texture2D" uid="uid://bxvnw67vr0pd1" path="res://assets/gavel/frame_0003.png" id="7_4sx27"]
 [ext_resource type="Texture2D" uid="uid://vl43jch588l8" path="res://assets/gavel/frame_0004.png" id="8_ukvkj"]
@@ -71,6 +72,8 @@
 [ext_resource type="Texture2D" uid="uid://8b2q5fr4ptd0" path="res://assets/gavel/frame_0065.png" id="69_2elfi"]
 [ext_resource type="Texture2D" uid="uid://6uv1w365f34m" path="res://assets/gavel/frame_0066.png" id="70_0i62n"]
 [ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="71_qxxmb"]
+[ext_resource type="AudioStream" uid="uid://ci4y2qbjrx756" path="res://assets/sounds/output.mp3" id="72_4sx27"]
+[ext_resource type="AudioStream" uid="uid://c65glg3lm6if8" path="res://assets/sounds/gavel.wav" id="74_j5t0r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_u2xm6"]
 animations = [{
@@ -325,6 +328,9 @@ offset_right = 177.0
 offset_bottom = 126.0
 theme_override_fonts/normal_font = ExtResource("71_qxxmb")
 
+[node name="TypewriterAudio" type="AudioStreamPlayer2D" parent="Dialouge_Left" unique_id=103092185]
+stream = ExtResource("6_j5t0r")
+
 [node name="Dialouge_Left2" type="Panel" parent="." unique_id=1416569864]
 layout_mode = 0
 offset_left = 437.0
@@ -346,6 +352,9 @@ offset_top = 39.0
 offset_right = 165.0
 offset_bottom = 125.0
 theme_override_fonts/normal_font = ExtResource("71_qxxmb")
+
+[node name="TypewriterAudio" type="AudioStreamPlayer2D" parent="Dialouge_Left2" unique_id=824301342]
+stream = ExtResource("6_j5t0r")
 
 [node name="Panel" type="Panel" parent="." unique_id=141878676]
 layout_mode = 0
@@ -421,3 +430,11 @@ offset_right = 362.0
 offset_bottom = 312.0
 theme_override_fonts/font = ExtResource("71_qxxmb")
 text = "Continue"
+
+[node name="BGMPlayer" type="AudioStreamPlayer2D" parent="." unique_id=216633307]
+stream = ExtResource("72_4sx27")
+volume_db = -1.01
+autoplay = true
+
+[node name="GavelAudio" type="AudioStreamPlayer2D" parent="." unique_id=415640935]
+stream = ExtResource("74_j5t0r")

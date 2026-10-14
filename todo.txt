@@ -1,5 +1,5 @@
-- Profile Display
-- Adding Music
 - Starting Menu
+
+
 - Code walkthrough demo video
 - Task splitting

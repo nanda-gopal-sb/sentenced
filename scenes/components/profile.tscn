@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://dv7b3r8t2oawf"]
+
+[ext_resource type="Script" uid="uid://doo0c350n73ln" path="res://scripts/profile.gd" id="1_httev"]
+[ext_resource type="Texture2D" uid="uid://ryuna44lqaev" path="res://assets/sprites/folder_closed.png" id="2_bqjnx"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="3_lbu52"]
+[ext_resource type="Texture2D" uid="uid://b37vvw5bba0n2" path="res://assets/sprites/turn_button.png" id="4_5ar2q"]
+[ext_resource type="Texture2D" uid="uid://b8uoc0ad50al5" path="res://assets/sprites/turn_left.png" id="5_ke1s4"]
+[ext_resource type="AudioStream" uid="uid://d7mtpg7nt8d8" path="res://assets/sounds/paper.wav" id="6_0smdk"]
+
+[node name="Control" type="Control" unique_id=453688964]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 57.0
+offset_bottom = 81.0
+script = ExtResource("1_httev")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=226340627]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.2, 1.2)
+mouse_filter = 2
+texture = ExtResource("2_bqjnx")
+
+[node name="CaseFile" type="RichTextLabel" parent="." unique_id=421754479]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 36.0
+offset_right = 62.0
+offset_bottom = 49.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.1764706, 0.12156863, 0.12941177, 1)
+theme_override_fonts/normal_font = ExtResource("3_lbu52")
+theme_override_font_sizes/normal_font_size = 13
+text = "Profile"
+
+[node name="RightText" type="RichTextLabel" parent="." unique_id=1919158173]
+visible = false
+layout_mode = 0
+offset_left = 84.0
+offset_top = 4.0
+offset_right = 151.0
+offset_bottom = 119.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_lbu52")
+theme_override_font_sizes/normal_font_size = 10
+
+[node name="LeftText" type="RichTextLabel" parent="." unique_id=266694619]
+visible = false
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 75.0
+offset_bottom = 119.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_lbu52")
+theme_override_font_sizes/normal_font_size = 10
+
+[node name="RghtTurnButton" type="TextureButton" parent="." unique_id=223509119]
+visible = false
+layout_mode = 0
+offset_left = 133.0
+offset_top = 104.0
+offset_right = 148.0
+offset_bottom = 119.0
+texture_normal = ExtResource("4_5ar2q")
+
+[node name="LeftTurnButton" type="TextureButton" parent="." unique_id=1705311912]
+visible = false
+layout_mode = 0
+offset_left = 5.0
+offset_top = 104.0
+offset_right = 22.546726
+offset_bottom = 119.1131
+rotation = 6.2831855
+texture_normal = ExtResource("5_ke1s4")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=1989867299]
+
+[node name="PaperSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1330516563]
+stream = ExtResource("6_0smdk")

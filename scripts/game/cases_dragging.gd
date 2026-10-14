@@ -13,8 +13,8 @@ const TEXTURE_OPENED = preload("res://assets/sprites/folder_opened.png")
 @onready var page_back_btn: TextureButton = $LeftTurnButton
 @onready var choice_overlay: VBoxContainer = $ChoiceOverlay
 
-@onready var deathPenaltyBtn: Button = $ChoiceOverlay/DeathPenalty
 @onready var courtSummon: Button = $ChoiceOverlay/CourtSummon
+@onready var paper_sound_player: AudioStreamPlayer2D = $PaperSoundPlayer
 
 # Dynamic pages populated from GameManager JSON
 var folder_pages: Array = []
@@ -25,6 +25,9 @@ var current_spread_index: int = 0
 var middle_zone: ReferenceRect
 var is_dragging: bool = false
 var drag_offset: Vector2 = Vector2.ZERO
+
+# Tracks whether the folder is currently resting/open over the middle zone
+var is_inside_zone: bool = false
 
 func _ready() -> void:
 	# Load pages dynamically from GameManager's current case file array
@@ -63,6 +66,12 @@ func _on_gui_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion and is_dragging:
 		global_position = get_global_mouse_position() - drag_offset
 
+func play_paper_sound() -> void:
+	if paper_sound_player:
+		# Pitch variation makes entering and leaving sound slightly distinct
+		paper_sound_player.pitch_scale = randf_range(0.9, 1.1)
+		paper_sound_player.play()
+
 func check_zone_collision() -> void:
 	var stable_size = Vector2(BASELINE_WIDTH, BASELINE_HEIGHT)
 	var my_rect = Rect2(global_position, stable_size)
@@ -73,6 +82,11 @@ func check_zone_collision() -> void:
 	var overlap_area = intersection_rect.get_area()
 	
 	if overlap_area >= (my_area * 0.5):
+		# Played when entering the zone onto the middle desk area
+		if not is_inside_zone:
+			play_paper_sound()
+			is_inside_zone = true
+
 		if texture_rect.texture != TEXTURE_OPENED:
 			size = Vector2(90, 110)
 			rotation_degrees = 0.0
@@ -82,6 +96,11 @@ func check_zone_collision() -> void:
 			case_label.visible = false
 			page_turn_btn.visible = true
 	else:
+		# Played when dragged away from the middle desk zone
+		if is_inside_zone:
+			play_paper_sound()
+			is_inside_zone = false
+
 		if texture_rect.texture != TEXTURE_CLOSED:
 			size = Vector2(76, 50)
 			rotation_degrees = randf_range(-12.0, 12.0)

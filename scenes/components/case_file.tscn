@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/Merchant Copy.ttf" id="3_ho0yh"]
 [ext_resource type="Texture2D" uid="uid://b37vvw5bba0n2" path="res://assets/sprites/turn_button.png" id="4_2cn7k"]
 [ext_resource type="Texture2D" uid="uid://b8uoc0ad50al5" path="res://assets/sprites/turn_left.png" id="5_lhpo0"]
+[ext_resource type="AudioStream" uid="uid://d7mtpg7nt8d8" path="res://assets/sounds/paper.wav" id="6_jm5sf"]
 
 [node name="Control" type="Control" unique_id=453688964]
 layout_mode = 3
@@ -88,3 +89,6 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_ho0yh")
 theme_override_font_sizes/font_size = 9
 text = "Summon Court"
+
+[node name="PaperSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1330516563]
+stream = ExtResource("6_jm5sf")
