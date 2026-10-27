@@ -3,7 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://gr6aoncx7hav" path="res://assets/sprites/chamber_scene.png" id="2_556kj"]
 [ext_resource type="Script" uid="uid://bln3bialsyj20" path="res://scripts/game/ChamberScene.gd" id="3_5k8bo"]
 [ext_resource type="Texture2D" uid="uid://dmsenbqhd8yye" path="res://assets/sprites/desk.png" id="3_b3u6c"]
+[ext_resource type="Texture2D" uid="uid://s3fg7w8jtv3l" path="res://assets/sprites/book_shelf.png" id="5_q0mrl"]
 [ext_resource type="AudioStream" uid="uid://cjafg1wk8oej" path="res://assets/sounds/chamber.wav" id="5_tdh1v"]
+[ext_resource type="Texture2D" uid="uid://bl80npyqsc334" path="res://assets/sprites/picture.png" id="6_q0mrl"]
 
 [node name="Control" type="Control" unique_id=1025668268]
 layout_mode = 3
@@ -69,3 +71,21 @@ border_color = Color(0.4256837, 0.60103345, 0.060684457, 1)
 stream = ExtResource("5_tdh1v")
 volume_db = -1.01
 autoplay = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1071239269]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 7.0
+offset_right = 596.0
+offset_bottom = 96.0
+texture = ExtResource("5_q0mrl")
+expand_mode = 1
+
+[node name="Portrait" type="TextureRect" parent="." unique_id=70333135]
+layout_mode = 0
+offset_left = 359.0
+offset_top = 18.0
+offset_right = 407.0
+offset_bottom = 74.0
+texture = ExtResource("6_q0mrl")
+expand_mode = 1

@@ -5,7 +5,7 @@ extends Control
 @onready var typewriter_audio: AudioStreamPlayer = $TypewriterAudio
 
 # Write your contextual lore text here
-@export_multiline var intro_text: String = "The year is 2026.\n\nThe judicial chambers are overwhelmed with unverified dossiers.\n\nAs the newly appointed judge, your duty is to review the case files, weigh the evidence, and issue verdicts.\n\nTap anywhere to begin..."
+@export_multiline var intro_text: String = "The year is 1876, in Meridia Republic.\n\nYou are appointed as the Judicial Judge for the Republic.\n\nCases are being appoineted to you, make sure you get the right verdict, and move up the ranks\n\n CLICK ANYWHERE TO BEGIN"
 
 var is_typing: bool = true
 
