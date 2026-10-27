@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://dupf63skdotyr" path="res://assets/sprites/courtroom_scene.png" id="1_a1vcf"]
 [ext_resource type="Script" uid="uid://sfs2qpat5j0e" path="res://scripts/game/Courtroom.gd" id="1_e1ehg"]
-[ext_resource type="Texture2D" uid="uid://b0jo5615mqhbd" path="res://assets/sprites/young women.png" id="2_cn4mi"]
 [ext_resource type="Script" uid="uid://8chksjidj6g" path="res://scripts/components/dialouge.gd" id="3_arjnd"]
+[ext_resource type="Texture2D" uid="uid://pne8eqldoypc" path="res://assets/sprites/man_2.png" id="3_hqbwk"]
 [ext_resource type="Texture2D" uid="uid://bea0w31xc8dl4" path="res://assets/gavel/frame_0001.png" id="5_ghetg"]
 [ext_resource type="AudioStream" uid="uid://cui25ep8yspn3" path="res://assets/sounds/type.mp3" id="6_j5t0r"]
 [ext_resource type="Texture2D" uid="uid://ct2xc3aqm67j1" path="res://assets/gavel/frame_0002.png" id="6_qxxmb"]
@@ -299,11 +299,11 @@ expand_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1616452689]
 layout_mode = 0
-offset_left = 242.0
-offset_top = 116.0
-offset_right = 403.0
-offset_bottom = 251.0
-texture = ExtResource("2_cn4mi")
+offset_left = 205.0
+offset_top = 75.0
+offset_right = 437.0
+offset_bottom = 265.0
+texture = ExtResource("3_hqbwk")
 expand_mode = 1
 
 [node name="Dialouge_Left" type="Panel" parent="." unique_id=1720302045]
@@ -358,10 +358,10 @@ stream = ExtResource("6_j5t0r")
 
 [node name="Panel" type="Panel" parent="." unique_id=141878676]
 layout_mode = 0
-offset_left = 148.0
-offset_top = 302.0
-offset_right = 493.0
-offset_bottom = 342.0
+offset_left = 156.0
+offset_top = 285.0
+offset_right = 485.0
+offset_bottom = 332.0
 
 [node name="VBoxContainer" type="HBoxContainer" parent="Panel" unique_id=141210789]
 layout_mode = 1
@@ -376,7 +376,7 @@ theme_override_constants/separation = 8
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("71_qxxmb")
-text = "Death "
+text = "Death Penalty"
 
 [node name="Not Guilty" type="Button" parent="Panel/VBoxContainer" unique_id=363644878]
 layout_mode = 2
@@ -388,7 +388,7 @@ text = "Not Guilty"
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("71_qxxmb")
-text = "Reduced "
+text = "Reduced Sentence"
 
 [node name="FadeOverlay" type="ColorRect" parent="." unique_id=718247538]
 visible = false

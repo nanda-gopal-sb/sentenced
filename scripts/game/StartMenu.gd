@@ -22,4 +22,4 @@ func _on_start_pressed() -> void:
 	GameManager.player_name = entered_name
 	
 	# Fade out or directly change scene to the main Chamber/Desk scene
-	get_tree().change_scene_to_file("res://scenes/ChamberScene.tscn")
+	get_tree().change_scene_to_file("res://scenes/info_screen.tscn")

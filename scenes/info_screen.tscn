@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://byqfchq4d4efr"]
+
+[ext_resource type="AudioStream" uid="uid://cui25ep8yspn3" path="res://assets/sounds/type.mp3" id="1_rtefb"]
+[ext_resource type="Script" uid="uid://c5ie0i4k0v3m3" path="res://scripts/info_screen.gd" id="1_ui1d1"]
+[ext_resource type="FontFile" uid="uid://dbg3y0uc8tdg7" path="res://assets/fonts/Merchant Copy.ttf" id="2_yi24a"]
+
+[node name="InfoScreen" type="Control" unique_id=1386196139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ui1d1")
+
+[node name="Background" type="ColorRect" parent="." unique_id=616692360]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="IntroLabel" type="RichTextLabel" parent="." unique_id=2089932000]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -226.0
+offset_top = -93.0
+offset_right = 232.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_yi24a")
+text = "Hellloooooooo"
+
+[node name="TypewriterAudio" type="AudioStreamPlayer" parent="." unique_id=1187499733]
+stream = ExtResource("1_rtefb")
